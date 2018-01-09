@@ -1,0 +1,186 @@
+/***************/
+/* MEYER RESET */
+/***************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #03a9f4;
+  color: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 100%;
+}
+.container h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 72px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+.container h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.container h3 + p {
+  margin-top: 1em;
+}
+.container p, .container img {
+  display: block;
+  margin: 3em auto;
+  max-width: 600px;
+}
+.container p {
+  letter-spacing: 0.025em;
+  line-height: 1.4;
+}
+
+#score-pdf {
+  text-align: center;
+}
+
+.pdfobject-container {
+  max-width: 100%;
+  width: 600px;
+  margin: 3em auto;
+  height: calc(90vh - 120px);
+}
+
+.main-carousel {
+  width: 100%;
+}
+.main-carousel .carousel-cell {
+  max-width: 600px;
+  margin: 0 30px;
+}
+
+.kern-wa {
+  margin-right: -0.08em;
+}
+
+.kern-av {
+  margin-right: -0.11em;
+}
+
+.kern-fa {
+  margin-right: -0.08em;
+}
+
+.kern-nf {
+  margin-right: -0.04em;
+}
+
+.kern-re {
+  margin-right: -0.02em;
+}
+
+.section {
+  min-height: 100vh;
+}
+
+.section-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-video iframe {
+  padding: 60px;
+}
+
+.main-sections {
+  position: relative;
+  display: inline-block;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #03a9f4;
+  transition: background-color 5s linear, color 2.5s linear;
+}
+.main-sections .main-sections__content {
+  position: relative;
+  z-index: 999;
+  pointer-events: none;
+}
+.main-sections .main-sections__content img, .main-sections .main-sections__content .pdfobject-container, .main-sections .main-sections__content .main-carousel {
+  pointer-events: all;
+}
+.main-sections .section {
+  padding: 60px 15px;
+}
+
+.down-arrow {
+  cursor: pointer;
+  margin: 0 !important;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.15s linear;
+}
+.down-arrow.show {
+  opacity: 1;
+}

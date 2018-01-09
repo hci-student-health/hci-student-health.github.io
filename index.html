@@ -1,32 +1,31 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+---
+layout: default
+---
 
-<style>
- body {
-  padding: 30px;
-  font-family: 'Karla', sans-serif;
- }
-</style>
-
-<div class="container">
-  <div class="row">
-    <div class="col-sm-6">
-      <h1>Sexual Health @ Princeton</h1>
-      <p>Madeleine Cheyette, Ines Franch, Laura Herman,<br/>Natalie Wertz, Jonathan Zong</p>
-
-      <p>
-        Information about student sexual health options at McCosh Infirmary is hard to find and not discussed openly on campus. Additionally, concerns about health confidentiality breaches to parents, means of insurance payments, and discussing often taboo sexual health topics deter students from accessing resources that would enable them to have happy and healthy lives at Princeton and beyond. Our goal for this project is to provide users with an easy-to-use and informative platform that enables them to access the sexual health information they both need and want in a way that maximizes their comfort and overall experience.
-      </p>
-
-      <ul>
-        <li><a href="#">GP 1 - Project Proposal</a></li>
-        <li><a href="#">GP 2 - User Research + Design</a></li>
-        <li><a href="#">GP 3 - Prototyping</a></li>
-        <li><a href="#">GP 4 - Final Prototype</a></li>
-      </ul>
-    </div>
-  </div>
+<div class="section section-video">
+  {% include video.html %}
 </div>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<div class="main-sections">
+
+  <div class="main-sections__content">
+    <div class="section section-about">
+      {% include about.html %}
+    </div>
+
+    <div class="section section-gp1">
+      {% include gp1.html %}
+    </div>
+    <div class="section section-gp2">
+      {% include gp2.html %}
+    </div>
+    <div class="section section-gp3">
+      {% include gp3.html %}
+    </div>
+    <div class="section section-gp4">
+      {% include gp4.html %}
+    </div>
+
+  </div>
+
+</div>
