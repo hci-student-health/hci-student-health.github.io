@@ -41,6 +41,15 @@ html, body {
     letter-spacing: 0.025em;
     line-height: 1.4;
   }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    &:hover {
+      font-style: italic;
+    }
+  }
 }
 
 #score-pdf {
@@ -109,7 +118,6 @@ html, body {
   width: 100vw;
   overflow-x: hidden;
   background-color: #03a9f4;
-  transition: background-color 5s linear, color 2.5s linear;
 
   .main-sections__content {
     position: relative;
