@@ -114,12 +114,6 @@ html, body {
   .main-sections__content {
     position: relative;
     z-index: 999;
-
-    pointer-events: none;
-
-    img, .pdfobject-container, .main-carousel {
-      pointer-events: all;
-    }
   }
 
   .section {
